@@ -16,9 +16,9 @@ type Vertex struct {
 
 var (
 	v1 = Vertex{1, 2}		// 创建一个Vertex类型的结构体  {1, 2}
-	v2 = Vertex{X: 1}		// Y:0 被隐式得赋予 {}
-	v3 = Vertex{}			// X:0 Y:0
-	p = &Vertex{1, 2}		// 创建一个 *Vertex类型的结构体（指针）
+	v2 = Vertex{X: 1}		// Y:0 被隐式得赋予 {1, 0}
+	v3 = Vertex{}			// X:0 Y:0			{0, 0}
+	p = &Vertex{1, 2}		// 创建一个 *Vertex类型的结构体（指针）&{1, 2}
 )
 
 func main() {
